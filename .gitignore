@@ -1,0 +1,4 @@
+datasets/
+Archive/
+__pycache__/
+.env
