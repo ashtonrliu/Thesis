@@ -14,11 +14,15 @@ For all large language models, the data is the foundation of the systems, provid
 
 Step 1. To use the system, first create a virtual environment,
 
-    conda create --name <env_name> python=3.9 --file requirements.txt 
+    conda create --name <env_name> python=3.9
 
 Step 2. Then activate your conda environment with,
 
     conda activate <env_name>
+
+Step 3. Install the following packages with,
+
+    pip install yfinance
 
 #### 1.2.1 Running System
 
