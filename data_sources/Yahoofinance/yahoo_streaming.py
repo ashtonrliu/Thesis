@@ -11,7 +11,7 @@ class Yahoo_Streaming():
 
         # Date Format: YYYY-MM-DD
 
-        data = yf.download(tickers=tickers, start=start, end=end, interval=interval, auto_adjust=False, progress=False, multi_level_index=False)  
+        data = yf.download(tickers=tickers, start=start, end=end, interval=interval, auto_adjust=False, progress=False, multi_level_index=False, rounding=True)  
         data["Ticker"] = tickers
         data.reset_index()
         # print(type(data))

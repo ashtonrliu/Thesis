@@ -17,7 +17,7 @@ class Json_Loader:
 
             start_date = data.iloc[i]['Date']
             # Get the next 20 rows starting from index i
-            window = data.iloc[i:i+20].to_dict(orient='records')
+            window = data.iloc[i:i+GROUP_BY].values.tolist()
             result_dict[start_date] = window        
         
         return result_dict
