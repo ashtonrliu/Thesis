@@ -7,7 +7,7 @@ def main():
 
     data_handler = Data_Handler()
     data_handler.download_ticker_grouped_json("AAPL", "APPLE", start="2021-01-01", end="2024-01-01")
-    data_handler.download_ticker_grouped_json("^GSPC", "SP500")
+    # data_handler.download_ticker_grouped_json("^GSPC", "SP500")
 
 if __name__ == "__main__":
     main()
